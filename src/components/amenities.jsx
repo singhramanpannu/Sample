@@ -1,29 +1,52 @@
 import React from "react";
+import img1 from "../assets/images/food.jpg";
+import img2 from "../assets/images/wifi.jpg";
+import img3 from "../assets/images/cafe.jpg";
+import img4 from "../assets/images/washing.jpg";
+import img5 from "../assets/images/fridge.jpg";
+import img6 from "../assets/images/charging.jpg"
 
 const amenities = [
-  "Fully Furnished Rooms",
-  "High-Speed Wi-Fi",
-  "Laundry Services",
-  "24/7 Security",
-  "Home-Cooked Meals",
-  "Air Conditioning",
+  { name: "food", image: img1 },
+  { name: "wifi", image: img2 },
+  { name: "Lounge and Cafe", image: img3 },
+  { name: "washing machine", image: img4 },
+  { name: "Fridge", image: img5 },
+  { name: "Power Backup", image: img6 },
+  
 ];
 
 const Amenities = () => {
   return (
-    <section id="amenities" className="py-16 px-4 md:px-12 bg-gray-50">
-      <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-8 text-gray-800">Our Amenities</h2>
-        <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {amenities.map((item, idx) => (
-            <li
-              key={idx}
-              className="bg-white shadow-md rounded-lg p-6 text-gray-700 font-medium hover:shadow-lg transition"
-            >
-              {item}
-            </li>
-          ))}
-        </ul>
+    <section id="services" className="bg-white py-24 px-6 md:px-12">
+      <div className="max-w-7xl mx-auto text-center">
+        <h2 className="text-5xl md:text-6xl font-extrabold text-gray-900 font-serif mb-6">
+          Amenities
+        </h2>
+        <p className="text-gray-600 max-w-3xl mx-auto mb-16 text-lg">
+          Designed for comfort, convenience, and community — enjoy thoughtfully selected amenities that enhance your daily life.
+        </p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+  {amenities.map((amenity, idx) => (
+    <div
+      key={idx}
+      className="relative overflow-hidden rounded-3xl shadow-lg group h-[200px] md:h-[250px] w-full"
+    >
+      <img
+        src={amenity.image}
+        alt={amenity.name}
+        className="w-full h-full object-cover transform group-hover:scale-105 transition duration-500"
+      />
+      <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+        <div className="bg-yellow-400 text-black px-5 py-2 text-lg font-semibold rounded shadow-md transition duration-300 group-hover:scale-105">
+          {amenity.name}
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+
       </div>
     </section>
   );
