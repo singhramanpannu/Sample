@@ -7,11 +7,11 @@ import LocationBenefits from './components/locationBenifits';
 import Gallery from './components/gallery';
 import Contact from './components/contact';
 import Footer from './components/footer';
-import useLenisScroll from './components/smoothscroll';
+
 
 
 function App() {
-  useLenisScroll();
+  
   return (
    <div>
       <Navbar />
