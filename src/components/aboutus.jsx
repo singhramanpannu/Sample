@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import img1 from "../assets/images/image-1.jpg";
-import img2 from "../assets/images/Image-2.jpg";
-import img3 from "../assets/images/Image-3.jpg";
+import img1 from "../../public/images/image-1.webp";
+import img2 from "../../public/images/Image-2.webp";
+import img3 from "../../public/images/Image-3.webp";
 
 const AboutUsSection = () => {
   return (

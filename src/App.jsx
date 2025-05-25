@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './components/navbar';
-import HomeSection from './Pages/homeSection';
+import HomeSection from './components/homeSection';
 import AboutUsSection from './components/aboutus';
 import Amenities from './components/amenities';
 import LocationBenefits from './components/locationBenifits';

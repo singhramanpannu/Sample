@@ -1,10 +1,10 @@
 import React from "react";
-import img1 from "../assets/images/food.jpg";
-import img2 from "../assets/images/wifi.jpg";
-import img3 from "../assets/images/cafe.jpg";
-import img4 from "../assets/images/washing.jpg";
-import img5 from "../assets/images/fridge.jpg";
-import img6 from "../assets/images/charging.jpg"
+import img1 from "../../public/images/food.webp";
+import img2 from "../../public/images/wifi.webp";
+import img3 from "../../public/images/cafe.webp";
+import img4 from "../../public/images/washing.webp";
+import img5 from "../../public/images/fridge.webp";
+import img6 from "../../public/images/charging.webp"
 
 const amenities = [
   { name: "food", image: img1 },
